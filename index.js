@@ -9,9 +9,9 @@ const port = process.env.port || 5000;
 
 app.use(bodyParser());
 
+app.use(responseHandler());
 app.use(router.routes());
 app.use(router.allowedMethods());
-app.use(responseHandler);
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
