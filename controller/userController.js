@@ -3,9 +3,8 @@ const { get } = require("../model/userModel");
 exports.get = (ctx) => {
   try {
     const user = get();
-    const id = ctx.params.id;
     ctx.status = 200;
-    ctx.body = { statusCode: "data fetch successfully!", user: user, id };
+    ctx.body = { statusCode: "data fetch successfully!", user: user };
   } catch (error) {
     ctx.status = 400;
     ctx.body = { statusCode: "data fetch failed!", user: user };
