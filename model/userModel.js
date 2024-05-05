@@ -1,15 +1,13 @@
 let usersData = [
   {
     id: 1,
-    username: "Newton",
-    email: "newton1804090@gmail.com",
-    password: "password123",
+    username: "Shubrotto",
+    email: "skshuboto@gmail.com",
   },
   {
     id: 2,
-    username: "Einsteiniam",
-    email: "einstein1804999@gmail.com",
-    password: "chemist456",
+    username: "jack",
+    email: "jack@gmail.com",
   },
 ];
 
