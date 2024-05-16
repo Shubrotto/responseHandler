@@ -1,13 +1,12 @@
-const aws = require("aws-sdk");
+const Aws = require("aws-sdk");
 
-aws.config.update({
+Aws.config.update({
   region: process.env.AWS_REGION,
   endpoint: process.env.ENDPOINT,
 });
 
-const docClient = new AWS.DynamoDB.DocumentClient({
-  apiVersion: process.env.AWS_API_VERSION,
-});
+const docClient = new Aws.DynamoDB.DocumentClient({ apiVersion: "2012-08-10" });
+
 const TABLE_NAME = "Users";
 
 const User = {
